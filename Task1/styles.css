@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .gallery-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-header h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #444;
+  }
+  
+  .gallery-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .large-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .large-image-container img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .large-image-container img:hover {
+    transform: scale(1.02);
+  }
+  
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #prev-btn {
+    left: 10px;
+  }
+  
+  #next-btn {
+    right: 10px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 5px;
+  }
+  
+  .thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 2px solid #444;
+  }
+  
